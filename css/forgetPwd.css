@@ -1,0 +1,250 @@
+/*------------------基础样式设置-------------------------*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+html{
+	font-size:8px;
+}
+li{
+	list-style-type:none;
+}
+input{
+	outline:none;
+	border:none;
+}
+body{
+	background:#f2f2f2;
+}
+@media screen and (min-width:320px) and (max-width:568px){
+	html{
+		font-size:10px;
+	}
+	.user_info_box input{
+		width:43% !important;
+	}
+	.ver_pwd_box{
+		width:28rem !important;
+		margin-left:-14rem !important;
+	}
+}
+@media screen and (min-width:375px) and (max-width:667px){
+	html{
+		font-size:12px;
+	}
+	.user_info_box input{
+		width:42% !important;
+	}
+}
+@media screen and (min-width:414px) and (max-width:736px){
+	html{
+		font-size:14px;
+	}
+	.user_info_box input{
+		width:40% !important;
+	}
+	.ver_pwd_box{
+		width:28rem !important;
+		margin-left:-14rem !important;
+	}
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+	html{
+		font-size:16px;
+	}
+	.ver_pwd_box{
+		width:40rem !important;
+		margin-left:-20rem !important;
+	}
+}
+@media screen and (min-width:1025px){
+	html{
+		font-size:18px;
+	}
+	.ver_pwd_box{
+		width:50rem !important;
+		margin-left:-25rem !important;
+	}
+}
+/*---------------------------忘记密码页面相关样式-------------------------------------*/
+.user_img_box{
+	background:#00d3db;
+	/*height:12rem;*/
+	text-align:center;
+}
+.img_box{
+	position:relative;
+	height:12rem;
+}
+.user_img{
+	position:absolute;
+	top:55%;
+	left:50%;
+	margin-top:-5rem;
+	margin-left:-5rem;
+	width:10rem;
+	height:10rem;
+	border:#f0fcfd solid 1px;
+	padding:1rem;
+	border-radius:50%;
+}
+.user_img>div{
+	width:100%;
+	height:100%;
+	border-radius:50%;
+	overflow:hidden;
+}
+.user_img i{
+	display:block;
+	width:100%;
+	height:100%;
+	background:url('../images/user-img.jpg');
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.user_img_name{
+	color:#FFF;
+	font:2.5rem/4rem 'Microsoft YaHei';
+}
+.user_info_box{
+	margin-top:1rem;
+	min-height:10rem;
+	padding:0 5%;
+	background:#FFF;
+	box-shadow:0 2px 3px #e3e3e3;
+}
+.user_info_box>li{
+	width:100%;
+	height:5rem;
+	line-height:5rem;
+	font:1.4rem/5rem 'Microsoft YaHei';	
+}
+.user_info_box>li:first-child{
+	border-bottom:#ececed solid 1px;
+}
+.user_info_box input{
+	height:2.5rem;
+	line-height:2.5rem;
+	padding:0 4%;
+	width:48%;
+	color:#666;
+	font:1.3rem/2.5rem 'Microsoft YaHei';
+}
+
+.getVeri{
+	display:inline-block;
+	position:relative;
+	top:2%;
+	font-style:normal;
+	margin-left:2%;
+	color:#00d3db;
+	height:3.5rem;
+	line-height:3.5rem;
+	border:#00d3db solid 1px;
+	padding:0 2%;
+	border-radius:8px;
+	cursor:pointer;
+}
+.error_hint{
+	margin:1.5rem 0; 
+	color:#f8222c;
+	text-align:center;
+	visibility:hidden;
+}
+.next_step{
+	padding:0 10%;
+	height:5rem;
+	cursor:pointer;
+}
+.next_step_txt{
+	height:100%;
+	width:100%;
+	background:#ececed;
+	font:1.8rem/5rem 'Microsoft YaHei';
+	text-align:center;
+	color:#FFF;
+	border-radius:10px;
+}
+.next_step p{
+	margin-top:2rem;
+	text-align:right;
+	font:1.5rem/2.5rem 'Microsoft YaHei';
+	color:#999;
+}
+.login{
+	margin:0 5%;
+	color:#00d3db;
+	cursor:pointer;
+}
+/*--------------------------忘记密码验证相关样式-------------------------------*/
+.ver_pwd_mode{
+	display:none;
+}
+.ver_pwd_mask{
+	position:fixed;
+	top:0;
+	width:100%;
+	height:100%;
+	background:#a9a9a9;
+	opacity:0.5;
+}
+.ver_pwd_box{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:30rem;
+	height:26rem;
+	margin-top:-13rem;
+	margin-left:-15rem;
+	background:#FFF;
+	border-radius:10px;
+	font:1.4rem/5rem 'Microsoft YaHei';
+}
+.txt_box>li:nth-of-type(-n+3){
+	height:5rem;
+}
+.txt_box>li:first-of-type{
+	text-align:center;
+	border-bottom:#dfe1e2 solid 1px;
+}
+.pwd_box{
+	margin:0 4%;
+	border-bottom:#dfe1e2 solid 1px;
+	color:#999;
+}
+.txt_box>li:last-of-type{
+	height:36%;
+	text-align:center;
+	margin-top:2.8rem;
+}
+.txt_box span{
+	display:inline-block;
+}
+.pwd_box>span{
+	width:30%;
+}
+.pwd_box>input{
+	width:70%;
+	height:3.5rem;
+	line-height:3.5rem;
+	color:#999;
+	font:1.2rem/3.5rem 'Microsoft YaHei';
+}
+.pwd_err_hint{
+	height:1rem;
+	text-align:center;
+	color:red;
+	font:1.3rem/5rem 'Microsoft YaHei';
+	visibility:hidden;
+}
+#complete{
+	width:80%;
+	height:5.5rem;
+	line-height:5.5rem;
+	background:#00d3db;
+	color:#FFF;
+	border-radius:5px;
+	cursor:pointer;
+}
